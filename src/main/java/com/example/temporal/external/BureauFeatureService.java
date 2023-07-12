@@ -47,7 +47,7 @@ public class BureauFeatureService {
                 in.close();
                 connection.disconnect();
                 System.out.println("Response from the feature service: " + response.toString());
-                return new ParsedBureauReport();
+                return new ParsedBureauReport(response.toString());
             } else {
                 connection.disconnect();
                 System.out.println("Request failed. Response Code: " + responseCode);

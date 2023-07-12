@@ -13,4 +13,5 @@ public class Utils {
     public static final WorkflowServiceStubs service = WorkflowServiceStubs.newLocalServiceStubs();
     public static final WorkflowClient client = WorkflowClient.newInstance(service);
     public static final String taskQueue = "BureauTask";
+    public static final String signalQueue = "signalQueue";
 }

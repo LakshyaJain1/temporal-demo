@@ -1,5 +1,6 @@
 package com.example.temporal.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -8,8 +9,9 @@ import lombok.NoArgsConstructor;
  * Date - 04/07/2023
  */
 
-@NoArgsConstructor
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class ParsedBureauReport {
     private String name;
 }

@@ -1,6 +1,7 @@
 package com.example.temporal;
 
 import com.example.temporal.workers.BureauWorker;
+import com.example.temporal.workers.SignalWorker;
 import jakarta.annotation.PostConstruct;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -19,7 +20,8 @@ public class Main {
 
     @PostConstruct
     public void postConstruct(){
-        BureauWorker.main();
+        //BureauWorker.main();
+        SignalWorker.main();
     }
 
 }

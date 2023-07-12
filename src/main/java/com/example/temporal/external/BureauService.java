@@ -51,7 +51,7 @@ public class BureauService {
                 in.close();
                 connection.disconnect();
                 System.out.println("Response from the bureau service: " + response.toString());
-                return new BureauReport();
+                return new BureauReport(response.toString());
             } else {
                 connection.disconnect();
                 System.out.println("Request failed. Response Code: " + responseCode);

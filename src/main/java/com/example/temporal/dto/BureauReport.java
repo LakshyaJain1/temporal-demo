@@ -1,5 +1,6 @@
 package com.example.temporal.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -8,8 +9,9 @@ import lombok.NoArgsConstructor;
  * Date - 04/07/2023
  */
 
-@NoArgsConstructor
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class BureauReport {
     private String name;// Temporal was throwing in case we have empty dto (Doesn't contain any attribute)
 }
